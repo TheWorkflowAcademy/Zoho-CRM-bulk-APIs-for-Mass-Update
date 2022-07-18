@@ -185,7 +185,7 @@ if(bulkRead.containKey("data"))
   - If you try to retrieve a job before it's indexed, it will fail.
 - Run the bulk API call to retrieve the bulk job.
 - A job may take longer than 10 seconds to index for larger datasets. To account for that, create a pseudo-while loop to repeat the retrieval API call with a 10-second delay at iteration until successful.
-  - Zoho does not have a native function for a while loop, so we make our own with an iterator and if condition. Read more about creating your own while loop [here](https://github.com/camberdynamics/Create-List-Of-Sequential-Numbers).
+  - Zoho does not have a native function for a while loop, so we make our own with an iterator and if condition. Read more about creating your own while loop [here](https://github.com/TheWorkflowAcademy/Create-List-Of-Sequential-Numbers).
   - We have set 10 iterations of 10-second delays. Plus the initial 10-second delay, this section could go up to a maximum of 110 seconds to retrieve a job. You can increase the number here, but keep in mind that Zoho Deluge has a runtime limit of 5 minutes per execution.
 
 ```javascript
@@ -266,7 +266,7 @@ if(jobId != null)
 - We get the field value with the indexMap that we have built at the top of the script - `c.get(indexMap.get("field_name")`
 - The entire section in the loop here is based on the example use case. Please configure accordingly.
 - In this example, we setting "true" to the "High_Roller" field and a concatenation of "Deal Name (Account Name) : Amount".
-> **Tip:** The toString() function is more than just converting a variable to a string. It has many uses and one of it is to format an integer into a comma separated currency as seen in the `amount.toString("$#,##0")` part of the script. [Click here to read more about character formatting using toString().](https://github.com/camberdynamics/toString-Character-Formatting)
+> **Tip:** The toString() function is more than just converting a variable to a string. It has many uses and one of it is to format an integer into a comma separated currency as seen in the `amount.toString("$#,##0")` part of the script. [Click here to read more about character formatting using toString().](https://github.com/TheWorkflowAcademy/toString-Character-Formatting)
 
 ```javascript
 	// 8. ITERATE OVER EACH ROW AND BUILD THE CSV
