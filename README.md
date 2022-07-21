@@ -362,6 +362,7 @@ if(jobId != null)
 
 ### 13. GET FILE ID FROM THE UPLOAD & RUN THE BULK WRITE
 - Finally, get the file ID from the upload API call and run the bulk write API to mass update the records
+- Note: the fieldMappings parameter is optional. If the column names in your csv are already the API names of your fields, you can skip this part.
 
 ```javascript	
 	// 13. GET FILE ID FROM THE UPLOAD & RUN THE BULK WRITE
