@@ -59,6 +59,7 @@ X -.-> A --> B --> C --> D -.-> Y -.-> E--> F --> G -.-> H -.-> Z -.-> I --> J -
 - ZohoCRM.bulk.CREATE
 - ZohoFiles.files.ALL
 - ZohoCRM.modules.ALL
+- ZohoCRM.org.ALL
 
 ### Standalone Functions Needed
 Create some standalone functions to be called in the main script.
