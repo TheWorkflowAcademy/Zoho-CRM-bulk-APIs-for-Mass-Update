@@ -5,7 +5,7 @@ Zoho CRM's Bulk API allows us to get, process and update records in a more scala
 We need to process and update tens/hundreds of thousands of records in CRM. Using CRM's API or Deluge task works fine if you have a small dataset, but quickly becomes unscalable for a larger set of data (the more the records, the higher the API usage).
 
 ## Solution
-[Zoho CRM Bulk API](https://www.zoho.com/crm/developer/docs/api/v3/bulk-read/overview.html) allows us to get and update a large set of data in a single API call each, up to 250,000 records per call! We will be using the [Bulk Read API](https://www.zoho.com/crm/developer/docs/api/v3/bulk-read/overview.html) to get the records, and then [Bulk Write API](https://www.zoho.com/crm/developer/docs/api/v3/bulk-write/overview.html) to update.
+[Zoho CRM Bulk API](https://www.zoho.com/crm/developer/docs/api/v3/bulk-read/overview.html) allows us to get and update a large set of data in a single API call each, (up to 200,000 records for bulk read and 25,000 for bulk write per call! We will be using the [Bulk Read API](https://www.zoho.com/crm/developer/docs/api/v3/bulk-read/overview.html) to get the records, and then [Bulk Write API](https://www.zoho.com/crm/developer/docs/api/v3/bulk-write/overview.html) to update.
 > **Note:** Zoho Bulk API uses csv. You will be getting, processing and updating records in csv.
 
 Here's a summary of what the script would look like:
