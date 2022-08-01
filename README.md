@@ -193,7 +193,7 @@ if(bulkRead.containKey("data"))
 if(jobId != null)
 {
 	// 4. GET THE CSV FILE BY RETRIEVING THE JOB (this gets you a zip file containing a csv of the result)
-	standalone.delay(10);
+	standalone.delay(9);
 	zipFile = invokeurl
 	[
 		url :"https://www.zohoapis.com/crm/bulk/v2/read/" + jobId + "/result"
@@ -209,7 +209,7 @@ if(jobId != null)
 		if (!zipFile.isFile())
 		{
 			n = n + 1;
-			standalone.delay(10);
+			standalone.delay(9);
 			// REPEAT THE GET CSV FILE JOB
 			zipFile = invokeurl
 			[
