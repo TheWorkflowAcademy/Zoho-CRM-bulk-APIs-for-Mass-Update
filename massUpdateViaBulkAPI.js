@@ -80,7 +80,7 @@ if(jobId != null)
 	];
 	info "zipFile : " + zipFile;
 	// // Create a while loop with delay to repeat the job until it passes
-	iterator = repeat(",",10);
+	iterator = repeat(",",9);
 	n = 0;
 	for each i in iterator
 	{
